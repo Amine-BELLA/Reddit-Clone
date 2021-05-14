@@ -46,7 +46,7 @@ public class AuthService {
             );
         }
         catch (Exception ex) {
-            return "User not logged in";
+            return "Invalid Credentials";
         }
         return jwtUtil.generateToken(loginRequest.getUsername());
     }
